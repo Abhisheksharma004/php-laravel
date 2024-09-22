@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Laravel Blog Abhishek</h1>
+    <a href="/home">Home Page</a>
 </body>
 </html>
