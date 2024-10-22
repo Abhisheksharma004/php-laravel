@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -14,6 +15,7 @@ Route::get('/home/{id?}', function (string $id = null) {
     }
 });
 
+Route::get('user',[UserController::class, 'getUser']);
 // Route::view('/home','home');
 
 // Route::get('/new', function () {
